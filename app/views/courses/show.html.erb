@@ -1,0 +1,36 @@
+<div class="course-title">
+  <h2><%= @course.title %></h2>
+</div>
+
+<div class="read-container">
+
+  <div class="chapter">
+    <% @chapters.each do |chapter| %>
+      <a><%= chapter.title %></a>
+    <% end %>
+  </div>
+
+  <hr>
+
+  <div class="content">
+    <% chapter_id = @course.id == 1 ? 1 : 4 %>
+    <% sections = Section.where chapter_id: chapter_id %>
+    <% sections.each do |section| %>
+      <% if section.is_title %>
+        <h2><%= section.content %></h2>
+      <% elsif section.is_code %>
+        <div class="code">
+          <% strings = section.content.split "\n" %>
+          <% strings.each do |string| %>
+            <p><%= string %></p>
+          <% end %>
+        </div>
+      <% elsif section.is_list %>
+        <li><%= section.content %></li>
+      <% else %>
+        <p><%= section.content %></p>
+      <% end %>
+    <% end %>
+  </div>
+
+</div>

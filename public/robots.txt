@@ -1,0 +1,49 @@
+User-Agent: *
+Allow: /
+
+User-agent: Yandex
+Allow: /assets/images/
+Disallow: /assets/config/
+Disallow: /assets/stylesheets/
+Disallow: /assets/chanels/
+Disallow: /javascript/controllers/
+Disallow: /jobs/
+Disallow: /stylesheets/
+Disallow: /veb-resurs/?*
+Disallow: /?*
+
+User-Agent:  DotBot
+Disallow:
+
+User-Agent: AhrefsBot
+Disallow:
+
+User-Agent: MBCrawler
+Disallow:
+
+User-Agent: YaK
+Disallow:
+
+User-Agent: niraiya.com
+Disallow:
+
+User-Agent: MegaIndex.ru
+Disallow:
+
+User-Agent: MJ12bot
+Disallow:
+
+User-Agent: SemrushBot
+Disallow:
+
+User-Agent: Cloudfind
+Disallow:
+
+User-Agent: Seekport Crawler
+Disallow:
+
+User-Agent: proximic
+Disallow:
+
+Host: http://it-networking.web-ru.ru/
+Sitemap: http://it-networking.web-ru.ru/sitemap.xml

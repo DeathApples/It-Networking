@@ -1,0 +1,20 @@
+<div class="auth-form">
+
+  <div class="auth-form-header">
+    <h2>Авторизация</h2>
+  </div>
+
+  <div class="auth-form-body">
+    <%= form_with scope: :session, url: session_path, class: 'field' do |form| %>
+      <%= form.label :login, "Логин" %>
+      <%= form.text_field :login, id: 'login-field' %>
+
+      <%= form.label :password, "Пароль" %>
+      <%= form.password_field :password, id: 'password-field' %>
+
+      <%= form.submit "Войти", class: 'button' %>
+      <%= link_to "Регистрация", new_user_path %>
+    <% end %>
+  </div>
+
+</div>

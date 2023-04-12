@@ -1,0 +1,171 @@
+.header a {
+    text-decoration: none;
+}
+
+.header h1 {
+    font-size: 64px;
+    font-weight: 380;
+    margin-left: 12px;
+
+    color: #FFFFFF;
+    
+    text-shadow: 4px 5px 6px #AAED05;
+}
+
+.about {
+    color: #828282;
+}
+
+#about-title {
+    line-height: 76px;
+    font-weight: 640;
+    font-size: 54px;
+
+    text-align: center;
+}
+
+#about-text {
+    line-height: 42px;
+    font-weight: 400;
+    font-size: 32px;
+
+    margin: 0 6em;
+}
+
+#main-title {
+    line-height: 112px;
+    font-weight: 500;
+    font-size: 95px;
+
+    text-align: center;
+    margin-top: 20px;
+
+    color: #AAED05;
+}
+
+.profile label {
+    font-weight: 480;
+    user-select: none;
+}
+
+.profile .attribute {
+    font-size: 48px;
+    color: #AAED05;
+}
+
+.profile .attribute-name {
+    font-size: 48px;
+    margin-top: 32px;
+    
+    color: #c5d49d;
+}
+
+.courses h3 {
+    text-align: center;
+
+    letter-spacing: 0.12em;
+    line-height: 85px;
+    font-weight: 500;
+    font-size: 54px;
+
+    color: #AAED05;
+}
+
+.courses p {
+    font-size: 24px;
+    padding-bottom: 15px;
+}
+
+.courses a {
+    max-width: 520px;
+    border-radius: 40px;
+    margin: 0 20px 40px 20px;
+    padding: 0 10px 0px 15px;
+
+    text-decoration: none;
+    cursor: pointer;
+
+    background: #2e2e2e;
+    color: #dddddd;
+}
+
+.courses a:hover {
+    background: #424242;
+}
+
+.course-title h2 {
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+
+    text-align: center;
+    margin: 20px 0;
+
+    color: #292929;
+    background: #AAED05;
+}
+
+.chapter a {
+    font-size: 24px;
+    min-width: 120px;
+    margin: 10px 40px 0 40px;
+
+    cursor: pointer;
+    text-decoration: underline;
+
+    color: #828282;
+}
+
+.content p {
+    margin: 6px 20px 0 40px;
+
+    font-size: 18px;
+    color: #c4c4c4;
+}
+
+.content li {
+    margin: 0 20px 0 72px;
+
+    font-size: 18px;
+    color: #c4c4c4;
+}
+
+.content h2 {
+    margin: 20px 0 20px 80px;
+    
+    font-size: 32px;
+    color: #c4c4c4;
+}
+
+.auth-form-header {
+    background-color: #AAED05;
+
+    margin: 140px 0px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
+
+    width: 450px;
+}
+
+.auth-form-header h2 {
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+
+    text-align: center;
+    color: #292929;
+}
+
+.auth-form-body label {
+    color: #c4c4c4;
+    font-size: 18px;
+    margin: 20px 40px 0px 48px;
+}
+
+.auth-form-body a {
+    text-align: center;
+    margin: 10px 0px 20px 0px;
+
+    text-decoration: underline;
+    text-align: center;
+    color: #828282;
+}

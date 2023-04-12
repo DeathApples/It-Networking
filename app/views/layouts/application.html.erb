@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Курсы по Cisco и Linux для новичков и профи</title>
+    <meta name="keywords" content="Linux Cisco курсы уроки линукс циско тест">
+    <meta name="description" content="На нашем сайте вы можете найти интересные курсы на темы: Cisco, Linux. Также в конце главы вас ожидает тест, который поможет вам понять на сколько хорошо вы изучили материал.">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+
+    <div class="header">
+
+      <%= link_to root_path do %>
+        <%= content_tag :h1, "IT Networking" %>
+      <% end %>
+
+      <div class="nav-container">
+        <% if current_user.present? %>
+          <%= link_to current_user.nick, user_path(id: current_user.id), id: 'profile-link' %>
+          <%= button_to "Выйти", session_path, method: :delete, id: 'login-link', form: false %>
+        <% else %>
+          <%= link_to "Войти", new_session_path, id: 'login-link' %>
+        <% end %>
+      </div>
+
+    </div>
+
+    <%= yield %>
+
+  </body>
+</html>

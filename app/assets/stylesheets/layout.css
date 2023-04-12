@@ -1,0 +1,63 @@
+.header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 140px;
+}
+
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+    margin-top: 40px;
+}
+
+.read-container {
+    flex: 1;
+    display: flex;
+}
+
+.chapter {
+    display: flex;
+    flex-direction: column;
+}
+
+.code {
+    margin: 5px 60px 5px 60px;
+    padding: 2px 0 8px 0;
+    border-radius: 10px;
+    background: #292929;
+}
+
+.auth-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.auth-form-body {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 450px;
+}
+
+.auth-form-body form {
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 0px 0px 10px 10px;
+    background: #292929;
+
+    width: 450px;
+}

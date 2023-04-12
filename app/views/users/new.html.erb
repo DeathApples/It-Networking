@@ -1,0 +1,26 @@
+<div class="auth-form">
+
+  <div class="auth-form-header">
+    <h2>Регистрация</h2>
+  </div>
+
+  <div class="auth-form-body">
+    <%= form_with model: @user, class: 'field' do |form| %>
+      <%= form.label :nick, "Имя пользователя" %>
+      <%= form.text_field :nick, id: 'login-field' %>
+
+      <%= form.label :login, "Логин" %>
+      <%= form.text_field :login, id: 'login-field' %>
+
+      <%= form.label :email, "Электронная почта" %>
+      <%= form.text_field :email, id: 'login-field' %>
+
+      <%= form.label :password, "Пароль" %>
+      <%= form.password_field :password, id: 'password-field' %>
+
+      <%= form.submit "Регистрация", class: 'button' %>
+      <%= link_to "Вы уже зарегистрированы?", new_session_path %>
+    <% end %>
+  </div>
+
+</div>
